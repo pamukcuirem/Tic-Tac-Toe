@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Playing">
+
+    <TextView
+        android:id="@+id/turnText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="32dp"
+        android:text="Sıra: "
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/miniImage"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="399dp"
+        android:layout_height="485dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout style="@style/row">
+
+            <ImageView
+                android:id="@+id/a1"
+                style="@style/column"
+                android:onClick="boardTapped"
+                />
+
+            <View
+                android:layout_height="match_parent"
+                android:layout_width="5dp"
+                android:background="@color/black"/>
+
+            <ImageView
+                android:id="@+id/a2"
+                style="@style/column"
+                android:onClick="boardTapped"/>
+
+            <View
+                android:layout_height="match_parent"
+                android:layout_width="5dp"
+                android:background="@color/black"/>
+
+            <ImageView
+                android:id="@+id/a3"
+                style="@style/column"
+                android:onClick="boardTapped"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_height="5dp"
+            android:layout_width="match_parent"
+            android:background="@color/black"/>
+
+        <LinearLayout style="@style/row">
+
+            <ImageView
+                android:id="@+id/b1"
+                style="@style/column"
+                android:onClick="boardTapped"/>
+            <View
+                android:layout_height="match_parent"
+                android:layout_width="5dp"
+                android:background="@color/black"/>
+
+            <ImageView
+                android:id="@+id/b2"
+                style="@style/column"
+                android:onClick="boardTapped"/>
+            <View
+                android:layout_height="match_parent"
+                android:layout_width="5dp"
+                android:background="@color/black"/>
+
+            <ImageView
+                android:id="@+id/b3"
+                style="@style/column"
+                android:onClick="boardTapped"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_height="5dp"
+            android:layout_width="match_parent"
+            android:background="@color/black"/>
+
+        <LinearLayout
+            style="@style/row">
+
+            <ImageView
+                android:id="@+id/c1"
+                style="@style/column"
+                android:onClick="boardTapped"/>
+            <View
+                android:layout_height="match_parent"
+                android:layout_width="5dp"
+                android:background="@color/black"/>
+
+            <ImageView
+                android:id="@+id/c2"
+                style="@style/column"
+                android:onClick="boardTapped"/>
+            <View
+                android:layout_height="match_parent"
+                android:layout_width="5dp"
+                android:background="@color/black"/>
+
+            <ImageView
+                android:id="@+id/c3"
+                style="@style/column"
+                android:onClick="boardTapped"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/miniImage"
+        android:layout_width="70dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="144dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

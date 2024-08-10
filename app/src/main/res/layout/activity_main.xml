@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/turnText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Oyuncunu Seç "
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/firstText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:text="Birinci Oyuncu:  "
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/secondText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="440dp"
+        android:text="İkinci Oyuncu:  "
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/frogrow1"
+        android:layout_width="160dp"
+        android:layout_height="10dp"
+        android:background="@color/blue"
+        app:layout_constraintBottom_toTopOf="@+id/frog"
+        app:layout_constraintEnd_toEndOf="@+id/frogrow4"
+        app:layout_constraintStart_toStartOf="@+id/frogrow3">
+
+    </View>
+
+    <View
+        android:id="@+id/jellyrow1"
+        android:layout_width="160dp"
+        android:layout_height="10dp"
+        android:background="@color/blue"
+        app:layout_constraintBottom_toTopOf="@+id/jellyfish"
+        app:layout_constraintEnd_toEndOf="@+id/jellyrow3"
+        app:layout_constraintStart_toStartOf="@+id/jellyrow4">
+
+    </View>
+
+    <View
+        android:id="@+id/frogrow3"
+        android:layout_width="10dp"
+        android:layout_height="200dp"
+        android:background="@color/blue"
+        app:layout_constraintBottom_toBottomOf="@+id/frogrow2"
+        app:layout_constraintEnd_toStartOf="@+id/frog"
+        app:layout_constraintTop_toTopOf="@+id/frogrow1">
+
+    </View>
+
+    <View
+        android:id="@+id/jellyrow3"
+        android:layout_width="10dp"
+        android:layout_height="200dp"
+        android:background="@color/blue"
+        app:layout_constraintBottom_toBottomOf="@+id/jellyrow2"
+        app:layout_constraintStart_toEndOf="@+id/jellyfish"
+        app:layout_constraintTop_toTopOf="@+id/jellyrow1">
+
+    </View>
+
+
+    <ImageView
+        android:id="@+id/frog"
+        android:layout_width="160dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstText"
+        app:srcCompat="@drawable/frog" />
+
+    <View
+        android:id="@+id/jellyrow4"
+        android:layout_width="10dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/blue"
+        app:layout_constraintEnd_toStartOf="@+id/jellyfish"
+        app:layout_constraintTop_toTopOf="@+id/jellyrow1">
+
+    </View>
+
+    <View
+        android:id="@+id/frogrow2"
+        android:layout_width="160dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/blue"
+        app:layout_constraintEnd_toEndOf="@+id/frogrow4"
+        app:layout_constraintStart_toStartOf="@+id/frogrow3"
+        app:layout_constraintTop_toBottomOf="@+id/frog">
+
+    </View>
+
+    <ImageView
+        android:id="@+id/jellyfish"
+        android:layout_width="160dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstText"
+        app:srcCompat="@drawable/jellyfish" />
+
+    <View
+        android:id="@+id/frogrow4"
+        android:layout_width="10dp"
+        android:layout_height="200dp"
+        android:background="@color/blue"
+        app:layout_constraintBottom_toBottomOf="@+id/frogrow2"
+        app:layout_constraintStart_toEndOf="@+id/frog"
+        app:layout_constraintTop_toTopOf="@+id/frogrow1">
+
+    </View>
+
+    <View
+        android:id="@+id/jellyrow2"
+        android:layout_width="160dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/blue"
+        app:layout_constraintEnd_toEndOf="@+id/jellyrow3"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="@+id/jellyrow4"
+        app:layout_constraintTop_toBottomOf="@+id/jellyfish">
+
+    </View>
+
+    <ImageView
+        android:id="@+id/snake"
+        android:layout_width="160dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondText"
+        app:srcCompat="@drawable/snake" />
+
+
+    <ImageView
+        android:id="@+id/snail"
+        android:layout_width="160dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondText"
+        app:srcCompat="@drawable/snail" />
+
+    <View
+        android:id="@+id/snakerow1"
+        android:layout_width="160dp"
+        android:layout_height="10dp"
+        android:background="@color/green"
+        app:layout_constraintBottom_toTopOf="@+id/snake"
+        app:layout_constraintEnd_toEndOf="@+id/snakerow4"
+        app:layout_constraintStart_toStartOf="@+id/snakerow3">
+
+    </View>
+
+    <View
+        android:id="@+id/snakerow3"
+        android:layout_width="10dp"
+        android:layout_height="200dp"
+        android:background="@color/green"
+        app:layout_constraintBottom_toBottomOf="@+id/snakerow2"
+        app:layout_constraintEnd_toStartOf="@+id/snake"
+        app:layout_constraintTop_toTopOf="@+id/snakerow1">
+
+    </View>
+
+    <View
+        android:id="@+id/snakerow4"
+        android:layout_width="10dp"
+        android:layout_height="200dp"
+        android:background="@color/green"
+        app:layout_constraintBottom_toBottomOf="@+id/snakerow2"
+        app:layout_constraintStart_toEndOf="@+id/snake"
+        app:layout_constraintTop_toTopOf="@+id/snakerow1">
+
+    </View>
+
+    <View
+        android:id="@+id/snakerow2"
+        android:layout_width="160dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/green"
+        app:layout_constraintEnd_toEndOf="@+id/snakerow4"
+        app:layout_constraintStart_toStartOf="@+id/snakerow3"
+        app:layout_constraintTop_toBottomOf="@+id/snake">
+
+    </View>
+
+
+    <View
+        android:id="@+id/snailrow1"
+        android:layout_width="160dp"
+        android:layout_height="10dp"
+        android:background="@color/green"
+        app:layout_constraintBottom_toTopOf="@+id/snail"
+        app:layout_constraintEnd_toEndOf="@+id/snailrow4"
+        app:layout_constraintStart_toStartOf="@+id/snailrow3">
+
+    </View>
+
+    <View
+        android:id="@+id/snailrow3"
+        android:layout_width="10dp"
+        android:layout_height="200dp"
+        android:background="@color/green"
+        app:layout_constraintBottom_toBottomOf="@+id/snailrow2"
+        app:layout_constraintEnd_toStartOf="@+id/snail"
+        app:layout_constraintTop_toTopOf="@+id/snailrow1">
+
+    </View>
+
+    <View
+        android:id="@+id/snailrow4"
+        android:layout_width="10dp"
+        android:layout_height="200dp"
+        android:background="@color/green"
+        app:layout_constraintBottom_toBottomOf="@+id/snailrow2"
+        app:layout_constraintStart_toEndOf="@+id/snail"
+        app:layout_constraintTop_toTopOf="@+id/snailrow1">
+
+    </View>
+
+    <View
+        android:id="@+id/snailrow2"
+        android:layout_width="160dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/green"
+        app:layout_constraintEnd_toEndOf="@+id/snailrow4"
+        app:layout_constraintStart_toStartOf="@+id/snailrow3"
+        app:layout_constraintTop_toBottomOf="@+id/snail">
+
+    </View>
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="129dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/turquoise"
+        android:text="Başla"
+        android:textColor="#333333"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.965"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/snailrow2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
